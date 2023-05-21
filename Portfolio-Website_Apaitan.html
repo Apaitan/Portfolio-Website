@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: black;
+      color: Gold;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: teal;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    section h2 {
+      background-color: maroon;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    section {
+      width: 100%;
+      height: 100vh;
+      background: grey;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    section:not(:first-child) {
+    border-top: 20px groove green;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: grey;
+    }
+    .gallery-item {
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      flex-basis: 45%;
+      padding: 0 3px;
+      box-sizing: border-box;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s;
+      display: flex;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Left Image" style="float: left; margin-right: 10px; width: 150px">
+    <img src="logo2.png" alt="Right Image" style="float: right; margin-left: 10px; width: 150px">
+    <h1>Mystery Clicks</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about" style="background-color: lightblue; height: 130vh">
+    <h2>About Me</h2>
+
+    <img src="logo.png" alt="Left Image" style="float: left; margin-right: 10px; width: 150px; border-radius: 50%">
+    <img src="logo2.png" alt="Right Image" style="float: right; margin-left: 10px; width: 150px; border-radius: 50%">
+          <img src="Grad Pic.png" alt="Niel Angelo M. Apaitan" style="float: left; margin-left: 35%; width: 150px; border-radius: 50%">
+          <br><br><br><br><br><br><br><br>
+
+          <p><strong> Name: </strong> Niel Angelo M. Apaitan </p><br>
+          <p><strong> Age: </strong> 19 Years Old </p><br>
+          <p><strong> Birthday: </strong> October 21 2003 </p><br>
+          <p><strong> Address: </strong> Blk.17 Lot. 27 Bernabe Compound Pulang Lupa Uno <br> Las Pinas City </p><br>
+          <p><strong> Contact Number: </strong> 09948938041 </p><br>
+          <p><strong> Marital Status: </strong> Single </p><br>
+          <p><strong> Studied at: </strong> Adamson University </p><br>
+          <p><strong> Hobbies: </strong> Playing Badminton, Table Tennis and Online Games, Singing and Writing Songs, Reading Books, <br> Sleeping, Loving Someone Who Will Not Love Me Back </p><br>
+          <p><strong> Skills: </strong> Photo capturing, Photo editing, Thumbnail making. </p><br>
+          <p><strong> Note: </strong> Rates depends on the urgency, resources needed, amount of work, and special requests. </p><br>
+
+  </section>
+
+  <section id="projects" style="background-color: tan; height: 250vh">
+    <h2>Projects</h2>
+
+    <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="1.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+      <img src="2.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+      <img src="3.png" alt="Image 3">
+    </div>
+    <div class="gallery-item">
+      <img src="4.png" alt="Image 4">
+    </div>
+    <div class="gallery-item">
+      <img src="5.png" alt="Image 5">
+    </div>
+    <div class="gallery-item">
+      <img src="6.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+      <img src="7.png" alt="Image 7">
+    </div>
+    <div class="gallery-item">
+      <img src="8.jpg" alt="Image 8">
+    </div>
+    <div class="gallery-item">
+      <img src="9.png" alt="Image 9">
+    </div>
+    <div class="gallery-item">
+      <img src="10.jpg" alt="Image 10">
+    </div>
+    <div class="gallery-item">
+      <img src="11.png" alt="Image 11">
+    </div>
+    <div class="gallery-item">
+      <img src="12.png" alt="Image 12">
+    </div>
+    <div class="gallery-item">
+      <img src="13.png" alt="Image 13">
+    </div>
+    <div class="gallery-item">
+      <img src="14.jpg" alt="Image 14">
+    </div>
+    <div class="gallery-item">
+      <img src="15.png" alt="Image 15">
+    </div>
+
+  </section>
+
+  <section id="contact" style="background-color: gold; height: 80vh">
+    <h2>Contact Me</h2>
+    <div class="Google-Map" style="padding-right: 50%; margin-top: 50px">
+      <p>Visit us at our address: </p>
+      <a href="https://goo.gl/maps/Zd2DWcRrV6jgmgyD9"><img src="Map.png" style="float: left; margin-left: 15%; width: 500px; border-radius: 50%"></a>
+    </div>
+    <div class="FB">
+      <p>Visit my facebook page at: </p>
+      <a href="https://www.facebook.com/nielangelo.apaitan"><img src="profile.png" style="float: Right; margin-right: 23%; width: 200px; border-radius: 50%"></a>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="Insta" style="padding-top: 8%">
+      <p>Contact our email at:</p>
+      <a href="https://mail.google.com/mail/u/0/#inbox"> n2apaitan@gmail.com</a>
+    </div>
+    <div class="Phone">
+      <p>Call us at: 09266712184</p>
+    </div>
+    </div>
+  </section>
+
+  <footer>
+
+    <p>&copy; 2023 Mystery Clicks. All rights reserved.</p>
+  </footer>
+
+<script>
+
+</script>
+
+</body>
+</html>
